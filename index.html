@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Encriptador de texto</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    
+    <header>
+     <a href="https://www.aluracursos.com/" target="_blank"><img src="./img/Logo.png" id="logo"></a>
+     <h1>Encriptador</h1>
+    </header>
+    
+    <main>
+    
+    <section>
+        
+        <textarea type="text" class="text-input" id="text-input" cols="20" rows="6" placeholder="Ingrese el texto"></textarea>
+        
+        <h6>*Sólo letras minúsculas y sin acentos.</h6>
+        
+        <div>
+            <button type="button" onclick="btnencriptar()" id="encriptar">Encriptar</button>
+            <button type="button" onclick="btndesencriptar()" id="desencriptar">Desencriptar</button>
+        </div>
+    
+    </section>
+
+    <section>
+        
+        <textarea type="text" cols="20" rows="6" placeholder="tenterxtober enterncrimesptaidober" id="impresion"></textarea>
+        
+        <button id="btnCopy" data-clipboard-target="#impresion">Copiar</button>
+
+        <script src="./clipboard.js-master/dist/clipboard.min.js"></script>  
+        <script>
+            let clipBoard1 = new ClipboardJS('#btnCopy');
+        </script> 
+
+    
+    </section>
+
+    </main>    
+
+</body>
+
+<script src="./Js/script.js"></script>
+
+<div class="footer">
+    <a href="https://www.linkedin.com/in/iara-gim%C3%A9nez-antoniow-942a2815a/" target="_blank"><p class="copyright">&copy Iara Giménez-Antoniow</p>
+</div>
+
+</html>
